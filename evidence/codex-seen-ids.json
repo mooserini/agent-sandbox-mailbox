@@ -1,0 +1,12 @@
+{
+  "keeper": "ara-probe",
+  "reader": "codex",
+  "seen_ids": [
+    "20261003-203000-ara-hello.txt",
+    "20261003-204000-moose-hello.txt",
+    "20261003-206000-moose-hello-poop-agents.txt",
+    "20261003-213000-ara-what-we-fixed.txt",
+    "20261004-015242Z-codex-protocol-02-result-a42d2e2ced05405d84e75a2470e2aa43.txt"
+  ],
+  "rule": "IDs are recorded only after successful readback; timestamps are not the cursor."
+}

@@ -1,0 +1,63 @@
+{
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "helper": "/Users/thomaskenny/.sbx/docs/ara-probe/evidence/20261004-014727Z-7986d55e/candidate/.mailbox.py",
+  "helper_sha256": "0189d1ac9fbfcc4cf0a3507a9e6fd682956dadec0b23e207e2874777e004096c",
+  "scope": "Disposable host fixtures; archived helper; no keeper operations",
+  "baseline": {
+    "separate_shell_readback": true,
+    "race": [
+      {
+        "code": 0,
+        "stdout": "/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/claimed/verify-a--99cdb856bdec4cb3a6b5fd00c0db76a7--20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt",
+        "stderr": ""
+      },
+      {
+        "code": 3,
+        "stdout": "",
+        "stderr": "[Errno 2] No such file or directory: '/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/drop/20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt' -> '/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/claimed/verify-b--88407545ce2c4732ad44a7c220c06d7a--20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt'"
+      }
+    ],
+    "winner_retry": {
+      "code": 0,
+      "stdout": "/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/claimed/verify-a--99cdb856bdec4cb3a6b5fd00c0db76a7--20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt",
+      "stderr": ""
+    },
+    "consumed_id_republication": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "[Errno 17] File exists: '/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/drop/.posting-vgxhirw4' -> '/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/.published/20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt'"
+    },
+    "malformed_note": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "Expected from, to, about headers, a blank line, and a body"
+    },
+    "pending_note": "20261004-021630Z-codex-persistence-cdb3dc047718436283b771be032c6e37.txt",
+    "work_note": "20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt",
+    "claim": "/var/folders/vx/k57xhxn96hqfjl4rk_6fw6j80000gn/T/ara-architecture-bf9xayrk/baseline/claimed/verify-a--99cdb856bdec4cb3a6b5fd00c0db76a7--20261004-021630Z-codex-verification-720f2967d2194c1f8303353506774029.txt",
+    "sha256": "80a53007de7570b6311ef13bc6fb6221bb3678a0fba40bcac0230152dc01153c",
+    "device_ids": [
+      16777232,
+      16777232,
+      16777232
+    ]
+  },
+  "retry_integrity_diagnostics": {
+    "missing_record": {
+      "retry_returned_same_path": true
+    },
+    "different_inode": {
+      "retry_returned_same_path": true
+    },
+    "symlink_record": {
+      "retry_returned_same_path": true
+    }
+  },
+  "post_rename_fsync_diagnostic": {
+    "initial_error": "Injected directory fsync failure after rename",
+    "claim_retained": true,
+    "retry_sync_calls": [],
+    "interpretation": "Retry identifies ownership without repeating directory fsync; no power-loss conclusion"
+  }
+}
